@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>뽀모도로 타이머</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff3b3b">
+</head>
+<body>
+  <div class="app">
+    <h1>🍅 뽀모도로</h1>
+
+    <div class="timer" id="timer">25:00</div>
+    <div class="mode" id="mode">공부</div>
+
+    <div class="controls">
+      <label>공부(분)
+        <input type="number" id="studyTime" value="25">
+      </label>
+      <label>휴식(분)
+        <input type="number" id="breakTime" value="5">
+      </label>
+      <label>반복 횟수
+        <input type="number" id="repeatCount" value="4">
+      </label>
+    </div>
+
+    <div class="toggles">
+      <button id="infiniteBtn">계속 반복: OFF</button>
+      <button id="themeBtn">다크 / 라이트</button>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">시작</button>
+      <button id="pauseBtn">멈춤</button>
+      <button id="resetBtn">리셋</button>
+    </div>
+
+    <div class="pomo">
+      완료한 뽀모: <span id="pomoCount">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #f2f2f2;
+  --btn: #ff3b3b;
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+  --card: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 16px;
+  width: min(360px, 92vw);
+  text-align: center;
+}
+
+.timer {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--btn);
+  color: white;
+  cursor: pointer;
+}
