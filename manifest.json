@@ -1,6 +1,6 @@
 {
   "name": "뽀모도로 타이머",
-  "short_name": "Pomodoro",
+  "short_name": "뽀모도로타이머",
   "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
@@ -17,5 +17,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "lang": "ko",
+  "categories": [
+    "education"
+  ],
+  "description": "뽀모도로타이머 웹앱"
 }
